@@ -34,8 +34,6 @@ dependencies = [
     
 
 
-    # Nvdiffrast (Cài từ git)
-    "nvdiffrast @ git+https://github.com/NVlabs/nvdiffrast.git"
 ]
 
 # Tự động tìm code trong thư mục (để import src.utils...)

@@ -29,7 +29,7 @@ dependencies = [
 
     # Deep Learning Models
     "transformers", 
-    "diffusers==0.20.2",
+    "diffusers>=0.26.0",
     "huggingface-hub",
     
 

@@ -1,12 +1,47 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "instantmesh"
 version = "0.0.1"
 requires-python = ">=3.10"
-
+description = "InstantMesh dependencies based on official Jupyter Notebook"
 dependencies = [
+    # Core Dependencies from Notebook
+    "pytorch-lightning==2.1.2",
+    "gradio==3.50.2", 
+    "einops", 
+    "omegaconf", 
+    "torchmetrics", 
+    "webdataset", 
+    "accelerate", 
+    "tensorboard",
+    
+    # 3D & Image Processing
+    "PyMCubes", 
+    "trimesh", 
+    "rembg", 
+    "bitsandbytes", 
+    "imageio[ffmpeg]", # Hỗ trợ xử lý video
+    "xatlas", 
+    "plyfile",
+    "ninja", # Cần thiết để biên dịch nvdiffrast
 
+    # Deep Learning Models
+    "transformers", 
+    "diffusers==0.20.2",
+    "huggingface-hub",
+    
+    # Dependencies lạ có trong notebook (vẫn giữ để tôn trọng source code)
+    "jax==0.4.19",
+    "jaxlib==0.4.19",
+
+    # Nvdiffrast (Cài từ git)
+    "nvdiffrast @ git+https://github.com/NVlabs/nvdiffrast.git"
 ]
 
+# Tự động tìm code trong thư mục (để import src.utils...)
 [tool.setuptools.packages.find]
 where = ["."]
 include = ["*"]

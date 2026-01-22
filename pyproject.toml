@@ -3,7 +3,9 @@ name = "instantmesh"
 version = "0.0.1"
 requires-python = ">=3.10"
 
-dependencies = []
+dependencies = [
+"nvdiffrast @ git+https://github.com/NVlabs/nvdiffrast.git"
+]
 
 [tool.setuptools.packages.find]
 where = ["."]

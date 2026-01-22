@@ -26,16 +26,13 @@ dependencies = [
     "imageio[ffmpeg]", # Hỗ trợ xử lý video
     "xatlas", 
     "plyfile",
-    "ninja", # Cần thiết để biên dịch nvdiffrast
 
     # Deep Learning Models
     "transformers", 
     "diffusers==0.20.2",
     "huggingface-hub",
     
-    # Dependencies lạ có trong notebook (vẫn giữ để tôn trọng source code)
-    "jax==0.4.19",
-    "jaxlib==0.4.19",
+
 
     # Nvdiffrast (Cài từ git)
     "nvdiffrast @ git+https://github.com/NVlabs/nvdiffrast.git"

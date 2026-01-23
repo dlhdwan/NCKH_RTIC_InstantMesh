@@ -8,32 +8,6 @@ version = "0.0.1"
 requires-python = ">=3.10"
 description = "InstantMesh dependencies based on official Jupyter Notebook"
 dependencies = [
-    # Core Dependencies from Notebook
-    "pytorch-lightning==2.1.2",
-    "gradio==3.50.2", 
-    "einops", 
-    "omegaconf", 
-    "torchmetrics", 
-    "webdataset", 
-    "accelerate", 
-    "tensorboard",
-    
-    # 3D & Image Processing
-    "PyMCubes", 
-    "trimesh", 
-    "rembg", 
-    "bitsandbytes", 
-    "imageio[ffmpeg]", # Hỗ trợ xử lý video
-    "xatlas", 
-    "plyfile",
-
-    # Deep Learning Models
-    "transformers", 
-    "diffusers>=0.26.0",
-    "huggingface-hub",
-    
-
-
 ]
 
 # Tự động tìm code trong thư mục (để import src.utils...)
